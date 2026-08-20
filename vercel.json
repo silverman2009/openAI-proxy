@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/gateway.js": {
+      "maxDuration": 300
+    }
+  },
+  "rewrites": [
+    { "source": "/v1/:path*", "destination": "/api/gateway" },
+    { "source": "/:path*", "destination": "/api/gateway" }
+  ]
+}
